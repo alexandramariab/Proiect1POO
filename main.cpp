@@ -329,14 +329,6 @@ int nr_rez;
 int capacitate_rez;
 int next_id;
 
- ///functie privata care cauta indexul camerei cu numarul dat, sau afiseaza -1 daca nu exista
-
-    int gasesteIndexCamera(int nrCamera) const {
-        for (int i=0; i<camere_adaugate; ++i)
-            if (camere[i].getNumar()==nrCamera)
-                return i;
-        return -1;
-    }
 ///functie privata care dubleaza capacitatea vectorului dinamic de rezervari
     void extindeRezervari() {
         // Evităm situația în care capacitatea ar fi 0 (ar rezulta în alocări de dimensiune 0).
